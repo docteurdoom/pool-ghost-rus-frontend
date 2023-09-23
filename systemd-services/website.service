@@ -1,0 +1,15 @@
+[Unit]
+Description=Pool Ghost Rus website
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/pool-ghost-rus-webserver
+
+User=root
+
+Restart=always
+
+ExecStart=/opt/pool-ghost-rus-webserver/pool-ghost-rus-webserver
+
+[Install]
+WantedBy=multi-user.target
