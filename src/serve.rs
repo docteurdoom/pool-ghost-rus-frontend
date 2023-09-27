@@ -10,8 +10,8 @@ use crate::parse;
 
 const HTTP_PORT: u16 = 80;
 const HTTPS_PORT: u16 = 443;
-const CERT_PUB: &str = "/etc/letsencrypt/live/www.xn--80aqu.xn--c1awje.xn--p1acf/fullchain.pem";
-const CERT_PRIV: &str = "/etc/letsencrypt/live/www.xn--80aqu.xn--c1awje.xn--p1acf/privkey.pem";
+const CERT_PUB: &str = "./certs/fullchain.pem";
+const CERT_PRIV: &str = "./certs/privkey.pem";
 
 fn make_router() -> Router {
     return Router::new()

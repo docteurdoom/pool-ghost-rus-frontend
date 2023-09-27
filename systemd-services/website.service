@@ -3,13 +3,13 @@ Description=Pool Ghost Rus website
 After=network.target
 
 [Service]
-WorkingDirectory=/opt/pool-ghost-rus-webserver
+WorkingDirectory=/opt/pool-ghost-rus-frontend
 
 User=root
 
 Restart=always
 
-ExecStart=/opt/pool-ghost-rus-webserver/pool-ghost-rus-webserver
+ExecStart=/opt/pool-ghost-rus-webserver/pool-ghost-rus-frontend
 
 [Install]
 WantedBy=multi-user.target
