@@ -9,7 +9,7 @@ User=root
 
 Restart=always
 
-ExecStart=/opt/pool-ghost-rus-webserver/pool-ghost-rus-frontend
+ExecStart=/opt/pool-ghost-rus-frontend/pool-ghost-rus-frontend
 
 [Install]
 WantedBy=multi-user.target

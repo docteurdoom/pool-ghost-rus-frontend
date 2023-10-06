@@ -16,8 +16,8 @@ const CERT_PRIV: &str = "./certs/privkey.pem";
 fn make_router() -> Router {
     return Router::new()
         .nest_service("/assets", ServeDir::new("assets"))
-        .route("/", get(home));
-        //.route("/api", get(api));
+        .route("/", get(home))
+        .route("/api", get(api));
 }
 
 pub async fn http() {
@@ -54,7 +54,7 @@ async fn home() -> Html<String> {
     Html(dioxus_ssr::render(&app))
 }
 
-/*async fn api() -> Json<Value> {
+async fn api() -> Json<Value> {
     use parse::raw_data;
     debug!("Serving /api to anon ...");
     match raw_data() {
@@ -66,4 +66,4 @@ async fn home() -> Html<String> {
             Json(serde_json::from_str("API Error. Please contact server admin.").unwrap())
         }
     }
-}*/
+}

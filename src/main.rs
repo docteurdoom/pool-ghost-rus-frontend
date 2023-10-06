@@ -5,13 +5,11 @@ mod serve;
 mod logger;
 mod pages;
 mod parse;
-mod ghostd;
 
 #[tokio::main]
 async fn main() {
     use futures::future;
     logger::init();
-    serve::http().await;
 
     future::join(
         serve::http(),
