@@ -17,7 +17,7 @@ pub struct PoolData {
     pub stake_bonus: String,
     pub blocks_between_payment_runs: String,
     pub minimum_output_value: String,
-    pub synced_height: String,
+    pub real_height: String,
     pub blocks_found: String,
     pub total_disbursed: String,
     pub last_payment_run: String,
