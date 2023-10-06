@@ -51,7 +51,7 @@ pub fn home(cx: Scope) -> Element {
                     div { "Всего в пуле: " strong { data.total_pooled_coin } } br {}
                     div { "Порог выплаты: " strong { "0.1 GHOST" } }
                     div { "Блоки между запусками платежей: " strong { data.blocks_between_payment_runs } }
-                    div { "Высота синхронизации: " strong { data.synced_height } }
+                    div { "Высота синхронизации: " strong { data.real_height } }
                     div { "Найдено блоков: " strong { data.blocks_found } }
                     div { "Всего выплачено: " strong { data.total_disbursed } }
                     div { "Последний платёжный цикл: " strong { data.last_payment_run } } br {}
