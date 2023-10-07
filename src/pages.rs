@@ -230,12 +230,12 @@ pub fn en(cx: Scope) -> Element {
                         href: "https://ipfs.ghostbyjohnmcafee.com/#/",
                         strong { "GHOST" }
                     }
-                    " – is an anonymous cryptocurrency based on "
+                    " is an anonymous cryptocurrency based on "
                     a {
                         style: "color: white;",
                         target: "blank",
                         href: "https://en.wikipedia.org/wiki/Proof_of_stake",
-                        b { "Proof Of Stake" }
+                        b { "Proof-of-Stake" }
                     }
                     " consensus algorithm. "
                     "Thanks to this technology, there is no need in mining equipment. "
@@ -245,7 +245,7 @@ pub fn en(cx: Scope) -> Element {
                     " is the first and the only pool in which "
                     "the rewards produced in cold staking are reinvested automatically."
                     br {} br {}
-                    "After once clicking the ZAP button (reinvesting the received coins), "
+                    "After clicking the ZAP button (reinvesting the received coins), "
                     "all coins that are generated in the future will automatically join the cold staking. "
                     "This makes passive income in GHOST fully automated and secure."
                     br {} br {}
