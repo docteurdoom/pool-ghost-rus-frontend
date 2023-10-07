@@ -8,13 +8,8 @@ mod parse;
 
 #[tokio::main]
 async fn main() {
-    use futures::future;
     logger::init();
-
-    future::join(
-        serve::http(),
-        serve::https()
-    ).await;
+    serve::http().await;
 }
 
 
