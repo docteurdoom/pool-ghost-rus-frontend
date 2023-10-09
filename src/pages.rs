@@ -62,7 +62,7 @@ pub fn home(cx: Scope) -> Element {
                         style: "color: white;",
                         target: "blank",
                         href: "https://гост.рус/2021/02/15/что-такое-proof-of-stake-pos/",
-                        b { "Proof Of Stake" }
+                        b { "Proof-of-Stake" }
                     }
                     ". "
                     "Благодаря данной технологии, отсутствует необходимость в покупке"
