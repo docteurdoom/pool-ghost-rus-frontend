@@ -68,15 +68,7 @@ pub fn home(cx: Scope) -> Element {
                     "Благодаря данной технологии, отсутствует необходимость в покупке"
                     " оборудования для майнинга. Новые монеты начисляются благодаря уже имеющимся на Вашем счету."
                     br {} br {}
-                    b { "ПУЛ.ГОСТ.РУС" }
-                    " – это первый и единственный пул, в котором реализована возможность"
-                    " автоматического добавления новых монет в процесс стейкинга."
-                    br {} br {}
-                    "После первого нажатия кнопки ZAP (реинвестирование полученных монет), "
-                    "все средства, которые сгенерируются в будущем, автоматически будут размещены в пуле."
-                    " Это делает пассивный доход в GHOST полностью автоматизированным и безопасным."
-                    br {} br {}
-                    b { "Пулы холодного стейкинга" }
+					b { "Пулы холодного стейкинга" }
                     " созданы для объединения усилий и увеличения общей доходности держателей."
                     " При размещении монет в пуле, физически они остаются на Вашем кошельке,"
                     " и вы можете продолжать использовать их без ограничений. "
@@ -87,6 +79,14 @@ pub fn home(cx: Scope) -> Element {
                         b { "Подробнее" }
                     }
                     "."
+                    br {} br {} 
+                    b { "ПУЛ.ГОСТ.РУС" }
+                    " – это первый и единственный пул, в котором реализована возможность"
+                    " автоматического добавления новых монет в процесс стейкинга."
+                    br {} br {}
+                    "После первого нажатия кнопки ZAP (реинвестирование полученных монет), "
+                    "все средства, которые сгенерируются в будущем, автоматически будут размещены в пуле."
+                    " Это делает пассивный доход в GHOST полностью автоматизированным и безопасным."
                     br {} br {} hr {} br {}
                 }
                 div {
@@ -241,14 +241,6 @@ pub fn en(cx: Scope) -> Element {
                     "Thanks to this technology, there is no need in mining equipment. "
                     "New coins are minted by staking the coins you already have in your wallet. "
                     br {} br {}
-                    b { "POOL.GHOST.RUS" }
-                    " is the first and the only pool in which "
-                    "the rewards produced in cold staking are reinvested automatically."
-                    br {} br {}
-                    "After clicking the ZAP button (reinvesting the received coins), "
-                    "all coins that are generated in the future will automatically join the cold staking. "
-                    "This makes passive income in GHOST fully automated and secure."
-                    br {} br {}
                     b { "Cold Staking Pools" }
                     " are created to increase the overall profitability of holders. "
                     "Staked coins never leave your wallet and you can"
@@ -260,6 +252,14 @@ pub fn en(cx: Scope) -> Element {
                         b { "More info" }
                     }
                     "."
+                    br {} br {}
+                    b { "POOL.GHOST.RUS" }
+                    " is the first and the only pool in which "
+                    "the rewards produced in cold staking are reinvested automatically."
+                    br {} br {}
+                    "After clicking the ZAP button (reinvesting the received coins), "
+                    "all coins that are generated in the future will automatically join the cold staking. "
+                    "This makes passive income in GHOST fully automated and secure."
                     br {} br {} hr {} br {}
                 }
                 div {
