@@ -39,9 +39,9 @@ pub fn home(cx: Scope) -> Element {
                     }
                     a {
                         href: "/en",
-                        img {
-                            style: "width: 30px;",
-                            src: "assets/en_button.png",
+                        color: "white",
+                        b {
+							"EN"
                         }
                     } br {}
                     img {
@@ -212,9 +212,9 @@ pub fn en(cx: Scope) -> Element {
                     }
                     a {
                         href: "/",
-                        img {
-                            style: "width: 30px;",
-                            src: "assets/ru_button.png",
+                        color: "white",
+                        b {
+							"RU"
                         }
                     } br {}
                     img {
