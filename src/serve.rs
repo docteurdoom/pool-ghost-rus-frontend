@@ -3,10 +3,10 @@ use tower_http::services::ServeDir;
 
 use std::net::SocketAddr;
 
+use crate::pages;
+use crate::parse;
 use axum::{routing::get, Router};
 use serde_json::Value;
-use crate::parse;
-use crate::pages;
 
 const HTTP_PORT: u16 = 8080;
 
@@ -33,7 +33,7 @@ async fn home() -> Html<String> {
 
     debug!("Serving / to anon ...");
     let mut app = VirtualDom::new(pages::home);
-	let _ = app.rebuild();
+    let _ = app.rebuild();
     Html(dioxus_ssr::render(&app))
 }
 
@@ -42,7 +42,7 @@ async fn en() -> Html<String> {
 
     debug!("Serving /en to anon ...");
     let mut app = VirtualDom::new(pages::en);
-	let _ = app.rebuild();
+    let _ = app.rebuild();
     Html(dioxus_ssr::render(&app))
 }
 
@@ -50,9 +50,7 @@ async fn api() -> Json<Value> {
     use parse::raw_data;
     debug!("Serving /api to anon ...");
     match raw_data() {
-        Ok(data) => {
-            Json(data)
-        }
+        Ok(data) => Json(data),
         Err(e) => {
             error!("Can't read JSON file: {}", e);
             Json(serde_json::from_str("API Error. Please contact server admin.").unwrap())

@@ -1,5 +1,5 @@
-use dioxus::prelude::*;
 use crate::parse;
+use dioxus::prelude::*;
 
 pub fn home(cx: Scope) -> Element {
     let data = parse::deserialized_data().unwrap();
@@ -66,7 +66,7 @@ pub fn home(cx: Scope) -> Element {
                     }
                     ". "
                     "Благодаря данной технологии, отсутствует необходимость в покупке"
-                    " оборудования для майнинга. Новые монеты начисляются благодаря уже имеющимся на Вашем счету."
+                    " оборудования для майнинга. Новые монеты начисляются за счёт уже имеющихся на Вашем балансе."
                     br {} br {}
 					b { "Пулы холодного стейкинга" }
                     " созданы для объединения усилий и увеличения общей доходности держателей."
@@ -79,7 +79,7 @@ pub fn home(cx: Scope) -> Element {
                         b { "Подробнее" }
                     }
                     "."
-                    br {} br {} 
+                    br {} br {}
                     b { "ПУЛ.ГОСТ.РУС" }
                     " – это первый и единственный пул, в котором реализована возможность"
                     " автоматического добавления новых монет в процесс стейкинга."
@@ -167,6 +167,16 @@ pub fn home(cx: Scope) -> Element {
                                 }
                             }
                         }
+                    } br {}
+                    p {
+                    	style: "text-align: center; color: white;",
+                    	"Купить GHOST: "
+                    	a {
+                    		color: "white",
+                    		target: "blank",
+                    		href: "https://ghostpirate.biz",
+                    		"GhostPirate.biz"
+                    	}
                     } br {} br {}
                 }
             }
@@ -239,7 +249,7 @@ pub fn en(cx: Scope) -> Element {
                     }
                     " consensus algorithm. "
                     "Thanks to this technology, there is no need in mining equipment. "
-                    "New coins are minted by staking the coins you already have in your wallet. "
+                    "New coins are minted by staking the amounts you already have in your wallet. "
                     br {} br {}
                     b { "Cold Staking Pools" }
                     " are created to increase the overall profitability of holders. "
@@ -340,10 +350,19 @@ pub fn en(cx: Scope) -> Element {
                                 }
                             }
                         }
-                    } br {} br {}
+                    } br {}
+						p {
+							style: "text-align: center; color: white;",
+								"Buy GHOST: "
+								a {
+									color: "white",
+									target: "blank",
+									href: "https://ghostpirate.biz",
+									"GhostPirate.biz"
+								}
+					} br {} br {}
                 }
             }
         }
     ))
 }
-

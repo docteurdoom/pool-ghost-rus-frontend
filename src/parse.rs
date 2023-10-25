@@ -1,10 +1,10 @@
+use crate::JSON_PATH;
+use serde::Deserialize;
+use serde_json::Value;
 use std::error::Error;
 use std::fs::File;
 use std::io::Read;
 use std::path::PathBuf;
-use serde::Deserialize;
-use serde_json::Value;
-use crate::JSON_PATH;
 
 #[derive(Default, Debug, Clone, Deserialize)]
 pub struct PoolData {
